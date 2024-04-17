@@ -15,14 +15,41 @@
   <meta property="og:image" content="image.png">
 
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  
 </head>
 <body>
-  <h1>Document</h1>
+  <div id="nav-bar">
+    <div id="light-dark-button">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div id="search">
+      <input type="text" placeholder="Location...">
+    </div>
+    <div id="current-location">
+      <button type="button" class="current-location-btn">
+          <i class='bx bx-current-location'></i> Current Location
+      </button>
+    </div>
+  </div>
+  
 
+  <div id="info-panel">
 
+  </div>
+  <div id="weather-details">
 
+  </div>
+  <div id="five-day-forecast">
 
+  </div>
+  <div id="hourly-forecast">
+
+  </div>
   <script src="scripts.js"></script>
 </body>
 </html>
