@@ -21,6 +21,7 @@
   
 </head>
 <body>
+  
   <div id="nav-bar">
     <div class="switch-container">
       <!-- Light/Dark Mode Switch -->
@@ -58,102 +59,115 @@
         <i class='bx bx-current-location'></i> Current Location
       </button>
     </div>
-  </div>
+  </div> 
 
-  <div id="info-panel">
-    <!-- Display current location of weather -->
-    <div id="location">
-      <span id="location-name"></span>
-    </div>
+  <div id="main-content">
+    <div id="container1">
+      <div id="info-panel">
+        <!-- Display current location of weather -->
+        <div id="location">
+          <span id="location-name"></span>
+        </div>
 
-    <!-- Displays current time -->
-    <div id="time">
-      <span id="current-time"></span>
-    </div>
+        <!-- Displays current time -->
+        <div id="time">
+          <span id="current-time"></span>
+        </div>
 
-    <!-- Displays current date -->
-    <div id="date">
-      <span id="current-date"></span>
-    </div>
-  </div>
-
-  <div id="weather-details">
-    <div id="temp">
-      <h3>Temperature</h3>
-      <p id="temp-data">-- °C</p>
-    </div>
-    <div id="sunrise">
-      <h3>Sunrise</h3>
-      <p id="sunrise-time">--:--</p>
-    </div>
-    <div id="sunset">
-      <h3>Sunset</h3>
-      <p id="sunset-time">--:--</p>
-    </div>
-    <div id="weather-icon">
-      <h3>Condition</h3>
-      <img id="weather-icon-img" src="placeholder.png" alt="Weather Icon"> <!--Change src image later-->
-    </div>
-    <div id="weather-status">
-      <h3>Status</h3>
-      <p id="weather-status-desc">Sunny</p>
-    </div>
-    <div id="humidity">
-      <h3>Humidity</h3>
-      <p id="humidity-value">--%</p>
-    </div>
-    <div id="wind_speed">
-      <h3>Wind Speed</h3>
-      <p id="wind-speed-value">m/s</p>
-    </div>
-    <div id="pressure">
-      <h3>Pressure</h3>
-      <p id="pressure-value">hPa</p>
-    </div>
-    <div id="uv">
-      <h3>UV Index</h3>
-      <p id="iv-index">--</p>
-    </div>
-  </div>
-  <div id="five-day-forecast">
-    <h3>Five Day Forecast:</h3>
-    <div class="day-forecast" id="day-one">
-      <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
-      <p class="temp-data">-- °C</p>
-      <p class="date-data">--,- ---</p>
-    </div>
-    <div class="day-forecast" id="day-two">
-      <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
-      <p class="temp-data">-- °C</p>
-      <p class="date-data">--,- ---</p>
-    </div>
-    <div class="day-forecast" id="day-three">
-      <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
-      <p class="temp-data">-- °C</p>
-      <p class="date-data">--,- ---</p>
-    </div>
-    <div class="day-forecast" id="day-four">
-      <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
-      <p class="temp-data">-- °C</p>
-      <p class="date-data">--,- ---</p>
-    </div>
-    <div class="day-forecast" id="day-five">
-      <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
-      <p class="temp-data">-- °C</p>
-      <p class="date-data">--,- ---</p>
-    </div>
-  </div>
-  <div id="day-hourly-forecast" class="hourly-forecast-container">
-    <div class="hourly-forecast-slider"> <!-- Scrollable container -->
-      <div class="day-forecast"> <!--Repeats this for each hour dynamically-->
-        <time class="forecast-time">12:00 PM</time>
-        <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
-        <p class="temp-data">-- °C</p>
-        <img class="wind-icon" src="placeholder.png" alt="Wind from direction">
-        <p class="wind-data">-- m/s</p>
+        <!-- Displays current date -->
+        <div id="date">
+          <span id="current-date"></span>
+        </div>
       </div>
     </div>
+
+    <div id="container2">
+      <div id="weather-details">
+        <div id="temp">
+          <h3>Temperature</h3>
+          <p id="temp-data">-- °C</p>
+        </div>
+        <div id="sunrise">
+          <h3>Sunrise</h3>
+          <p id="sunrise-time">--:--</p>
+        </div>
+        <div id="sunset">
+          <h3>Sunset</h3>
+          <p id="sunset-time">--:--</p>
+        </div>
+        <div id="weather-icon">
+          <h3>Condition</h3>
+          <img id="weather-icon-img" src="placeholder.png" alt="Weather Icon"> <!--Change src image later-->
+        </div>
+        <div id="weather-status">
+          <h3>Status</h3>
+          <p id="weather-status-desc">Sunny</p>
+        </div>
+        <div id="humidity">
+          <h3>Humidity</h3>
+          <p id="humidity-value">--%</p>
+        </div>
+        <div id="wind_speed">
+          <h3>Wind Speed</h3>
+          <p id="wind-speed-value">m/s</p>
+        </div>
+        <div id="pressure">
+          <h3>Pressure</h3>
+          <p id="pressure-value">hPa</p>
+        </div>
+        <div id="uv">
+          <h3>UV Index</h3>
+          <p id="iv-index">--</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="container3">
+      <div id="five-day-forecast" >
+        <h3>Five Day Forecast:</h3>
+        <div class="day-forecast" id="day-one">
+          <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+          <p class="temp-data">-- °C</p>
+          <p class="date-data">--,- ---</p>
+        </div>
+        <div class="day-forecast" id="day-two">
+          <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+          <p class="temp-data">-- °C</p>
+          <p class="date-data">--,- ---</p>
+        </div>
+        <div class="day-forecast" id="day-three">
+          <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+          <p class="temp-data">-- °C</p>
+          <p class="date-data">--,- ---</p>
+        </div>
+        <div class="day-forecast" id="day-four">
+          <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+          <p class="temp-data">-- °C</p>
+          <p class="date-data">--,- ---</p>
+        </div>
+        <div class="day-forecast" id="day-five">
+          <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+          <p class="temp-data">-- °C</p>
+          <p class="date-data">--,- ---</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="container4">
+      <div id="day-hourly-forecast" class="hourly-forecast-container">
+        <div class="hourly-forecast-slider"> <!-- Scrollable container -->
+          <div class="day-forecast"> <!--Repeats this for each hour dynamically-->
+            <time class="forecast-time">12:00 PM</time>
+            <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+            <p class="temp-data">-- °C</p>
+            <img class="wind-icon" src="placeholder.png" alt="Wind from direction">
+            <p class="wind-data">-- m/s</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </div>
-  <script src="js/script.js"></script>
 </body>
 </html>
