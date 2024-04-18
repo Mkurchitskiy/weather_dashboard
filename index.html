@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   
 </head>
@@ -44,10 +45,10 @@
     <!-- Search Bar -->
     <div id="search">
       <form id="search-form" class="search-container">
-          <button type="submit" id="search-btn" aria-label="Search">
-              <i class='bx bx-search-alt'></i>
+        <button type="submit" id="search-btn" aria-label="Search">
+          <i class='bx bx-search-alt'></i>
           </button>
-          <input type="text" id="search-input" placeholder="Enter location..." aria-label="Search for weather">
+        <input type="text" id="search-input" placeholder="Enter location..." aria-label="Search for weather">
       </form>
     </div>
 
@@ -59,18 +60,23 @@
     </div>
   </div>
 
-
   <div id="info-panel">
+    <!-- Display current location of weather -->
     <div id="location">
       <span id="location-name"></span>
     </div>
+
+    <!-- Displays current time -->
     <div id="time">
       <span id="current-time"></span>
     </div>
+
+    <!-- Displays current date -->
     <div id="date">
       <span id="current-date"></span>
     </div>
   </div>
+
   <div id="weather-details">
     <div id="temp">
       <h3>Temperature</h3>
