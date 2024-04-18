@@ -34,7 +34,12 @@
       </label>
     </div>  
     <div id="search">
-      <input type="text" placeholder="Location...">
+      <form id="search-form" class="search-container">
+          <button type="submit" id="search-btn" aria-label="Search">
+              <i class='bx bx-search-alt'></i>
+              <input type="text" id="search-input" placeholder="Enter location..." aria-label="Search for weather">
+          </button>
+      </form>
     </div>
     <div id="current-location">
       <button type="button" class="current-location-btn">
