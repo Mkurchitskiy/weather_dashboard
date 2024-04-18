@@ -2,14 +2,17 @@
 // Background Toggle Switch
 document.addEventListener('DOMContentLoaded', function() {
     const toggleSwitch = document.querySelector("#light-dark-switch input[type='checkbox']");
+    const modeText = document.querySelector("#mode-text");
 
     function switchTheme(e) {
         if (e.target.checked) {
             document.body.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark'); // For Theme Saving Preferences
+            modeText.textContent = 'Dark Mode';
         } else {
             document.body.classList.remove('dark-mode');
-            localStorage.setItem('theme', 'light'); // Corrected from removeItem to setItem
+            localStorage.setItem('theme', 'light'); // For Theme Saving Preferences
+            modeText.textContent = 'Light Mode';
         }
     }
 
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentTheme) {
         document.body.classList.add(currentTheme === 'dark' ? 'dark-mode' : '');
         toggleSwitch.checked = currentTheme === 'dark';
+        modeText.textContent = currentTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
     }
 });
 

@@ -21,32 +21,45 @@
 </head>
 <body>
   <div id="nav-bar">
-    <div id="light-dark-switch">
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
+    <div class="switch-container">
+      <!-- Light/Dark Mode Switch -->
+      <div id="light-dark-switch">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span id="mode-text">Light Mode</span> 
+      </div>
+      
+      <!-- Temperature Unit Switch -->
+      <div id="temp-switch">
+        <label class="switch">
+          <input type="checkbox" id="unit-toggle">
+          <span class="slider round"></span>
+        </label>
+        <span id="unit-text">°C</span>
+      </div>  
     </div>
-    <div id="temp-switch">
-      <label class="switch">
-        <input type="checkbox" id="unit-toggle">
-        <span class="slider round"></span>
-      </label>
-    </div>  
+
+    <!-- Search Bar -->
     <div id="search">
       <form id="search-form" class="search-container">
           <button type="submit" id="search-btn" aria-label="Search">
               <i class='bx bx-search-alt'></i>
-              <input type="text" id="search-input" placeholder="Enter location..." aria-label="Search for weather">
           </button>
+          <input type="text" id="search-input" placeholder="Enter location..." aria-label="Search for weather">
       </form>
     </div>
+
+    <!-- Current Location Button -->
     <div id="current-location">
       <button type="button" class="current-location-btn">
         <i class='bx bx-current-location'></i> Current Location
       </button>
     </div>
   </div>
+
+
   <div id="info-panel">
     <div id="location">
       <span id="location-name"></span>
