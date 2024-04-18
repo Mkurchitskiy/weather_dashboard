@@ -119,8 +119,16 @@
       <p class="date-data">--,- ---</p>
     </div>
   </div>
-  <div id="hourly-forecast">
-
+  <div id="day-hourly-forecast" class="hourly-forecast-container">
+    <div class="hourly-forecast-slider"> <!-- Scrollable container -->
+      <div class="day-forecast"> <!--Repeats this for each hour dynamically-->
+        <time class="forecast-time">12:00 PM</time>
+        <img class="weather-icon" src="placeholder.png" alt="Weather Icon">
+        <p class="temp-data">-- °C</p>
+        <img class="wind-icon" src="placeholder.png" alt="Wind from direction">
+        <p class="wind-data">-- m/s</p>
+      </div>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>
