@@ -308,43 +308,39 @@ body {
 /* Five Day Forecast */
     #five-day-forecast {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
 
     #five-day-heading {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: 1 / 1 / 3 / 4;
         text-align: center;
         font-size: 1.4em;
-        /*margin: ; Figure this out another time, i got no clue rn */
+        margin: 5px;
     }
 
     .day-forecast {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);  
-        grid-template-rows: 1fr;
-        align-items: center; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
     }
 
-    #day-one {
-        grid-area: 2 / 1 / 3 / 2;
+    .day-forecast img {
+        text-align: left; 
     }
     
-    #day-two {
-        grid-area: 3 / 1 / 4 / 2;
+    .day-forecast .temp-data {
+        text-align: center;  /* Centers the temperature */
     }
     
-    #day-three {
-        grid-area: 4 / 1 / 5 / 2;
+    .day-forecast .date-data {
+        text-align: right;  /* Aligns the date to the right */
     }
     
-    #day-four {
-        grid-area: 5 / 1 / 6 / 2;
-    }
-    
-    #day-five {
-        grid-area: 6 / 1 / 7 / 2;
-    }
-
-
-
+    #day-one { grid-area: 2 / 1 / 3 / 4; }
+    #day-two { grid-area: 3 / 1 / 4 / 4; }
+    #day-three { grid-area: 4 / 1 / 5 / 4; }
+    #day-four { grid-area: 5 / 1 / 6 / 4; }
+    #day-five { grid-area: 6 / 1 / 7 / 4; }
