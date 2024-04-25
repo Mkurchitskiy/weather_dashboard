@@ -169,6 +169,7 @@ body {
         padding: 20px;
         margin: 0 auto;
         max-width: 1400px;
+        overflow: hidden;
     }
 
     #container1, #container2, #container3, #container4 {
@@ -307,13 +308,43 @@ body {
 /* Five Day Forecast */
     #five-day-forecast {
         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 
-    #five-day-forecast h3 {
+    #five-day-heading {
+        grid-area: 1 / 1 / 2 / 2;
         text-align: center;
         font-size: 1.4em;
+        /*margin: ; Figure this out another time, i got no clue rn */
     }
 
+    .day-forecast {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+        grid-template-rows: 1fr;
+        align-items: center; 
+    }
+
+    #day-one {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    #day-two {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    #day-three {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    #day-four {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    
+    #day-five {
+        grid-area: 6 / 1 / 7 / 2;
+    }
 
 
 
