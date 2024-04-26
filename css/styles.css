@@ -346,3 +346,54 @@ body {
     #day-five { grid-area: 6 / 1 / 7 / 4; }
 
 /* Day Hourly Forecast */
+    #day-hourly-forecast {
+        padding: 10px;
+        border-radius: 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+
+    #day-hourly-forecast h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .hourly-forecast-slider {
+        display: flex;  
+        flex-direction: row;
+        gap: 10px;  
+    }
+
+    .hourly-forecast {
+        display: flex; 
+        flex-direction: column;  
+        align-items: center; 
+        padding: 10px;  
+        background: #505050;  
+        border-radius: 5px;
+    }
+
+    .forecast-time {
+        font-size: 1em;
+        text-align: center;  
+    }
+
+    .weather-icon {
+        height: 30px;
+    }
+
+    .temp-data {
+        font-size: 1.2em;  
+        text-align: center; 
+    }
+    
+    .wind-icon {
+        height: 20px; 
+    }
+    
+    .wind-data {
+        font-size: 0.8em;  
+        text-align: center; 
+    }
+
